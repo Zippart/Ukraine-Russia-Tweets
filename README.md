@@ -3,7 +3,6 @@
 ## Purpose:
 Topics modeling and named entity recognition can help people understand key figures and events. This in turn can help humanitarian organizations locate areas of importance. It can help them understand the scope of conflict and impact. Models trained on this current dataset can become more effective at retrieving future relevant information. Organizations can gain insight into the evolution of political discourse and humanitarian response historically to make future informed decisions.
 
-
 ## 1.	Data
 https://www.kaggle.com/datasets/bwandowando/ukraine-russian-crisis-twitter-dataset-1-2-m-rows
 
@@ -23,11 +22,21 @@ I looked at just the text from the csvs because I’m focused on manipulating th
 After making a 5 kmeans and 11 kmeans cluster model, I used another NER model to see which clusters are what.
 
 ## 5.	Machine Learning
+After making a 5 kmeans and 11 kmeans cluster model, I used another NER model to see how my data was clustered. When graphed, there was a distinct cluster that is unique from the others. 
+5 kmeans was just a starting point for params. But it ended up being sufficient enough. The other parts were default:
+-	k-means++ for centroids
+-	n_init – number of algorithim runs
+-	etc…
+
+My 5 kmeans model had a DBI (Davies-Bouldin Index) score of 2.7, and my 11 kmeans had a 9. I used hyperparameter tuning to arrive at an 11 kmeans model, but it somehow performed worse. Also, when graphing both, I could not discern a meaningful difference. This is likely because most of the clusters were unfortunately closely knit and interspersed with each other. Other accuracy metrics to compare the two kmeans like silhouette scores and Calinski-Harabasz Index I couldn’t code properly. 
 
 ## 6.	Recommendations
+A web application could be developed to show the amount of popularity certain entities have to gauge varying degrees of importance through a GUI from the dataframes created from the different clusters.
+
+It may be a bit messy, but the unique entities amongst the two groupings of clusters (comparing clusters 0-2 and 0-5), provide a good number of entities to explore. The business problem revolved around: “identifying key figures, events, and areas of importance, which will improve the ability of humanitarian organizations to understand the scope and impact of the conflict”. And I believe looking through the entities can help with that.
 
 ## 7.	Future Improvements
+Including geographic location, the timing of tweets, and sentiment analysis could help in identifying trends and serious points of conflict. As mentioned earlier, neural networks are being considered, in addition to getting other accuracy metrics to work. Lastly, I need to test the clustering models on unseen data.
 
 ## 8.	Credits
-
 Thank you to everyone in the Springboard Slack and my mentor that helped me navigate this project!
