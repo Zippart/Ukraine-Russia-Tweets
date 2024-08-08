@@ -43,7 +43,7 @@ A web application could be developed to show the amount of popularity certain en
 It may be a bit messy, but the unique entities amongst the two groupings of clusters (comparing clusters 0-2 and 0-5), provide a good number of entities to explore. The business problem revolved around: “identifying key figures, events, and areas of importance, which will improve the ability of humanitarian organizations to understand the scope and impact of the conflict”. And I believe looking through the entities can help with that.
 
 ![image](https://github.com/user-attachments/assets/b6fa2c45-61f7-4f49-bbca-f2e0efb8fcf7)
-![image](https://github.com/user-attachments/assets/7f37024f-78e9-4edb-a09a-768b4daba16e)
+![image](https://github.com/user-attachments/assets/f9a7239a-cc78-4caf-b9e0-821b65f482a4)
 ![image](https://github.com/user-attachments/assets/f1daaad2-fa1a-4644-855c-f9e9173d2602)
 
 
