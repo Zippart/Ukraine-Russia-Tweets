@@ -1,5 +1,3 @@
-## In progress
-
 ## Purpose:
 Topics modeling and named entity recognition can help people understand key figures and events. This in turn can help humanitarian organizations locate areas of importance. It can help them understand the scope of conflict and impact. Models trained on this current dataset can become more effective at retrieving future relevant information. Organizations can gain insight into the evolution of political discourse and humanitarian response historically to make future informed decisions.
 
