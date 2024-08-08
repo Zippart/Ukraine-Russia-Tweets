@@ -1,0 +1,12 @@
+DBI score
+5 kmeans = 2.7
+11 kmeans = 9
+
+clustering
+
+all default except kmeans
+
+for ex:
+init = k-means++ (centroids)
+n_init = auto (number of algorithim runs)
+max_iter = 300
