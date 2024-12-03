@@ -31,7 +31,9 @@ After making a 5 kmeans and 11 kmeans cluster model, I used another NER model to
 -	n_init – number of algorithim runs
 -	etc…
 
-My 5 kmeans model had a DBI (Davies-Bouldin Index) score of 2.7, and my 11 kmeans had a 9. I used hyperparameter tuning to arrive at an 11 kmeans model, but it somehow performed worse. Also, when graphing both, I could not discern a meaningful difference. This is likely because most of the clusters were unfortunately closely knit and interspersed with each other. Other accuracy metrics to compare the two kmeans like silhouette scores and Calinski-Harabasz Index I couldn’t code properly. 
+My 5 kmeans model had a DBI (Davies-Bouldin Index) score of 2.7, and my 11 kmeans had a 9. I used hyperparameter tuning to arrive at an 11 kmeans model, but it somehow performed worse. Also, when graphing both, I could not discern a meaningful difference. This is likely because most of the clusters were unfortunately closely knit and interspersed with each other. Other accuracy metrics to compare the two kmeans like silhouette scores and Calinski-Harabasz Index I couldn’t code properly.
+
+It seems like cluster 4 has a focus on politicians while cluster 3 is more generalized with popular hashtags. Cluster 0 had no unique entities when compared with Clusters 1-2. Clusters 1-2 had miscellaneous differences that were not clear cut.
 
 ![image](https://github.com/user-attachments/assets/599aa5b4-4cf2-47ca-99f1-ba0d74220291)
 
